@@ -18,4 +18,8 @@ public class Calculator {
         }
         return a / b;
     }
+
+    public boolean isOdd(int number) {
+        return false;
+    }
 }
