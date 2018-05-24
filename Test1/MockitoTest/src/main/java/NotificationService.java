@@ -6,7 +6,7 @@ public class NotificationService {
         this.emailService = emailService;
         this.pigeonService = pigeonService;
     }
-    public void sendNotifacation(){
+    public void sendNotification(){
         if (emailService.isAvailable()){
             emailService.sendEmail("Email");
         }else if (pigeonService.isAvailable()){
