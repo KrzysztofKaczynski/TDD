@@ -1,0 +1,2 @@
+public class MocitoManual {
+}

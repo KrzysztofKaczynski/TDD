@@ -8,10 +8,10 @@ import java.util.Arrays;
 import static org.junit.Assert.assertTrue;
 
 @RunWith(value = Parameterized.class)
-public class CalculatorTest1 {
+public class Calculator2Test {
     private Calculator calculator;
     private int number;
-    public CalculatorTest1(int number){
+    public Calculator2Test(int number){
         this.number = number;
     }
 

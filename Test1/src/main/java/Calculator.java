@@ -22,4 +22,7 @@ public class Calculator {
     public boolean isOdd(int number) {
         return false;
     }
+
+    public Integer divideJ(Integer c, Integer d)
+    {return c/d;}
 }

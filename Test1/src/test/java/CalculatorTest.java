@@ -1,8 +1,10 @@
 
+import org.assertj.core.api.Assertions;
 import org.junit.Before;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertThat;
 
 public class CalculatorTest {                          // Klasa testowa
 
@@ -23,8 +25,8 @@ public class CalculatorTest {                          // Klasa testowa
     @Test
     public void shouldSubtractTwoNumbers() {
         int result = calculator.subtract(12, 4);
-
-        assertEquals(8, result);
+      Assertions.assertThat(result);
+        //assertEquals(8, result);
     }
 
     @Test
