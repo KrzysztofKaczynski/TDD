@@ -8,7 +8,7 @@ public class Book {
     private final int price;
     private final LocalDate date;
 
-    public Book(String author, String title, int price, LocalDate date){
+    public Book(String author, String title, int price, LocalDate date) {
         this.author = author;
         this.title = title;
         this.price = price;
@@ -28,5 +28,17 @@ public class Book {
         return price;
     }
 
-    public LocalDate getDate() {return date;}
+    public LocalDate getDate() {
+        return date;
+    }
+
+    @Override
+    public String toString() {
+        return "Book{" +
+                "author='" + author + '\'' +
+                ", title='" + title + '\'' +
+                ", price= " + price +
+                ", date = '" + date + '\'' +
+                '}';
+    }
 }
