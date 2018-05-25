@@ -1,3 +1,5 @@
+package books;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -8,7 +10,7 @@ public class Library {
 
     public Library(List<Book> books) {
         if (books.isEmpty()) {
-            throw new IllegalArgumentException("Book list cannot be empty");
+            throw new IllegalArgumentException("books.Book list cannot be empty");
         }
         this.books.addAll(books);
     }

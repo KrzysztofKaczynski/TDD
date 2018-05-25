@@ -1,4 +1,4 @@
-
+package books;
 
 import org.junit.Assert;
 import org.junit.Test;
@@ -17,12 +17,12 @@ public class LibraryTest {
     private Library library = new Library(Arrays.asList(book1, book2, book3, book4));
 
     @Test
-    public void shouldThowIllegalArgumentExceptionWhenBookListIsEmpty() {
+    public void shouldTrhowIllegalArgumentExceptionWhenBookListIsEmpty() {
         try {
             new Library(new ArrayList<>());
-            Assert.fail("Library should have thrown IllegalArgumentException");
+            Assert.fail("books.Library should have thrown IllegalArgumentException");
         } catch (IllegalArgumentException e) {
-            Assert.assertEquals("Book list cannot not be empty!", e.getMessage());
+            Assert.assertEquals("books.Book list cannot not be empty!", e.getMessage());
         }
     }
 
@@ -42,7 +42,7 @@ public class LibraryTest {
                 book1.getPrice() +
                         book2.getPrice() +
                         book3.getPrice() +
-                        book4.getPrice(), library.getTotalPrice());
+                        book4.getPrice(), library.getTotalPrices());
 
     }
 
